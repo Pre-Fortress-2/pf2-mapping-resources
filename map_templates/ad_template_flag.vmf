@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8869"
-	"mapversion" "154"
+	"mapversion" "160"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -89,7 +89,7 @@ bgimages_plus
 world
 {
 	"id" "1"
-	"mapversion" "154"
+	"mapversion" "160"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -6393,7 +6393,7 @@ entity
 	"mindxlevel" "0"
 	"model" "models/props_gameplay/door_slide_large_door.mdl"
 	"modelscale" "1.0"
-	"parentname" "door_red_small_3b"
+	"parentname" "spawn_door_red_1"
 	"PerformanceMode" "0"
 	"pressuredelay" "0"
 	"RandomAnimation" "0"
@@ -6454,8 +6454,8 @@ entity
 	"wait" "0"
 	connections
 	{
-		"OnStartTouch" "door_red_small_3b,Open,,0,-1"
-		"OnEndTouchAll" "door_red_small_3b,Close,,0,-1"
+		"OnStartTouch" "spawn_door_red_1,Open,,0,-1"
+		"OnEndTouchAll" "spawn_door_red_1,Close,,0,-1"
 	}
 	solid
 	{
@@ -6919,7 +6919,7 @@ entity
 	"rendermode" "0"
 	"spawnflags" "32"
 	"speed" "900"
-	"targetname" "door_red_small_3b"
+	"targetname" "spawn_door_red_1"
 	"unlocked_sentence" "0"
 	"wait" "4"
 	solid
@@ -7342,7 +7342,7 @@ entity
 	"mindxlevel" "0"
 	"model" "models/props_gameplay/door_slide_large_door.mdl"
 	"modelscale" "1.0"
-	"parentname" "door_blue_small_3b"
+	"parentname" "spawn_door_blue_1"
 	"PerformanceMode" "0"
 	"pressuredelay" "0"
 	"RandomAnimation" "0"
@@ -7403,8 +7403,8 @@ entity
 	"wait" "0"
 	connections
 	{
-		"OnStartTouch" "door_blue_small_3b,Open,,0,-1"
-		"OnEndTouchAll" "door_blue_small_3b,Close,,0,-1"
+		"OnStartTouch" "spawn_door_blue_1,Open,,0,-1"
+		"OnEndTouchAll" "spawn_door_blue_1,Close,,0,-1"
 	}
 	solid
 	{
@@ -7683,7 +7683,7 @@ entity
 	"rendermode" "0"
 	"spawnflags" "32"
 	"speed" "900"
-	"targetname" "door_blue_small_3b"
+	"targetname" "spawn_door_blue_1"
 	"unlocked_sentence" "0"
 	"wait" "4"
 	solid
@@ -8613,12 +8613,12 @@ entity
 	"point_default_owner" "2"
 	"point_dom_scale" "1"
 	"point_group" "0"
-	"point_index" "2"
+	"point_index" "0"
 	"point_printname" "Badwater_cap_1"
 	"point_warn_sound" "ControlPoint.CaptureWarn"
 	"spawnflags" "4"
 	"StartDisabled" "0"
-	"targetname" "control_point_2"
+	"targetname" "control_point_1"
 	"team_bodygroup_0" "3"
 	"team_bodygroup_2" "1"
 	"team_bodygroup_3" "0"
@@ -8679,17 +8679,15 @@ entity
 {
 	"id" "6943"
 	"classname" "trigger_capture_area"
-	"area_cap_point" "control_point_2"
+	"area_cap_point" "control_point_1"
 	"area_deteriorate_time" "90"
-	"area_time_to_cap" "30"
+	"area_time_to_cap" "6"
 	"StartDisabled" "0"
-	"targetname" "capture_area_2"
+	"targetname" "capture_area_1"
 	"team_cancap_2" "0"
 	"team_cancap_3" "1"
 	"team_numcap_2" "1"
 	"team_numcap_3" "1"
-	"team_startcap_2" "1"
-	"team_startcap_3" "1"
 	connections
 	{
 		"OnCapTeam2" "relay_cap1,Trigger,,0,-1"
@@ -9544,24 +9542,22 @@ entity
 {
 	"id" "9515"
 	"classname" "trigger_capture_area"
-	"area_cap_point" "control_point_3"
+	"area_cap_point" "control_point_2"
 	"area_deteriorate_time" "90"
 	"area_time_to_cap" "6"
 	"StartDisabled" "0"
-	"targetname" "capture_area_3"
+	"targetname" "capture_area_2"
 	"team_cancap_2" "0"
 	"team_cancap_3" "1"
 	"team_numcap_2" "1"
 	"team_numcap_3" "1"
-	"team_startcap_2" "1"
-	"team_startcap_3" "1"
 	connections
 	{
 		"OnCapTeam2" "prop_cap_3,Skin,2,0,-1"
 		"OnCapTeam1" "prop_cap_3,Skin,1,0,-1"
 		"OnEndCap" "end_of_game,RoundWin,,0,-1"
-		"OnCapTeam2" "avanti_flag2,Disable,,0,-1"
-		"OnCapTeam2" "avanti_flag2_trigger,Kill,,0,-1"
+		"OnCapTeam2" "ad_flag_2,Disable,,0,-1"
+		"OnCapTeam2" "ad_flag_2_trigger,Disable,,0,-1"
 	}
 	solid
 	{
@@ -9699,12 +9695,12 @@ entity
 	"point_default_owner" "2"
 	"point_dom_scale" "1"
 	"point_group" "0"
-	"point_index" "3"
+	"point_index" "1"
 	"point_printname" "Badwater_cap_4"
 	"point_warn_sound" "ControlPoint.CaptureWarn"
 	"spawnflags" "4"
 	"StartDisabled" "0"
-	"targetname" "control_point_3"
+	"targetname" "control_point_2"
 	"team_bodygroup_0" "3"
 	"team_bodygroup_2" "1"
 	"team_bodygroup_3" "0"
@@ -9714,7 +9710,7 @@ entity
 	"team_model_0" "models/effects/cappoint_hologram.mdl"
 	"team_model_2" "models/effects/cappoint_hologram.mdl"
 	"team_model_3" "models/effects/cappoint_hologram.mdl"
-	"team_previouspoint_3_0" "control_point_2"
+	"team_previouspoint_3_0" "control_point_1"
 	"team_timedpoints_2" "0"
 	"team_timedpoints_3" "0"
 	"origin" "703.94 0.98999 13.25"
@@ -9775,10 +9771,10 @@ entity
 		"OnTrigger" "start_timer,AddTime,480,0,-1"
 		"OnTrigger" "prop_cap_2,Skin,2,0,-1"
 		"OnTrigger" "flag_2_available_text,Display,,20,-1"
-		"OnTrigger" "avanti_flag2,Enable,,20,-1"
-		"OnTrigger" "avanti_flag,Disable,,0,-1"
-		"OnTrigger" "avanti_flag2_trigger,Enable,,20,-1"
-		"OnTrigger" "avanti_flag1_trigger,Kill,,0,-1"
+		"OnTrigger" "ad_flag_2,Enable,,20,-1"
+		"OnTrigger" "ad_flag_1,Disable,,0,-1"
+		"OnTrigger" "ad_flag_2_trigger,Enable,,20,-1"
+		"OnTrigger" "ad_flag_1_trigger,Disable,,0,-1"
 	}
 	"origin" "-144 0 8"
 	editor
@@ -9818,6 +9814,7 @@ entity
 		"OnMapSpawn" "tf_gamerules,SetRedTeamRole,1,0,-1"
 		"OnMapSpawn" "tf_gamerules,SetBlueTeamRole,2,0,-1"
 		"OnMapSpawn" "tf_gamerules,SetStalemateOnTimelimit,1,0,-1"
+		"OnMultiNewRound" "ad_flag_2_trigger,Disable,,0,-1"
 	}
 	"origin" "-248 -40 7.99999"
 	editor
@@ -9872,18 +9869,17 @@ entity
 	"ReturnOnTouch" "0"
 	"returntime" "40"
 	"ScoringType" "0"
-	"skin" "0"
 	"SlowPlayer" "1"
 	"StartDisabled" "0"
-	"targetname" "avanti_flag"
+	"targetname" "ad_flag_1"
 	"TeamNum" "3"
 	"trail_effect" "1"
 	connections
 	{
 		"OnReturnNoCap" "flag_return_text,Display,,0,-1"
 		"OnPickup" "flag_1_text,Display,,0,-1"
-		"OnReturnNoCap" "avanti_flag1_trigger,Enable,,0,-1"
-		"OnPickup" "avanti_flag1_trigger,Disable,,0,-1"
+		"OnReturnNoCap" "ad_flag_1_trigger,Enable,,0,-1"
+		"OnPickup" "ad_flag_1_trigger,Disable,,0,-1"
 	}
 	"origin" "-576 0 16"
 	editor
@@ -9911,15 +9907,15 @@ entity
 	"ScoringType" "0"
 	"SlowPlayer" "1"
 	"StartDisabled" "1"
-	"targetname" "avanti_flag2"
+	"targetname" "ad_flag_2"
 	"TeamNum" "3"
 	"trail_effect" "1"
 	connections
 	{
 		"OnReturnNoCap" "flag_return_text,Display,,0,-1"
 		"OnPickup" "flag_2_text,Display,,0,-1"
-		"OnPickup" "avanti_flag2_trigger,Disable,,0,-1"
-		"OnReturnNoCap" "avanti_flag2_trigger,Enable,,0,-1"
+		"OnPickup" "ad_flag_2_trigger,Disable,,0,-1"
+		"OnReturnNoCap" "ad_flag_2_trigger,Enable,,0,-1"
 	}
 	"origin" "256 0 6.67174"
 	editor
@@ -10062,7 +10058,7 @@ entity
 	"origin" "256 0 48"
 	"spawnflags" "1"
 	"StartDisabled" "1"
-	"targetname" "avanti_flag2_trigger"
+	"targetname" "ad_flag_2_trigger"
 	"wait" "1"
 	connections
 	{
@@ -10202,7 +10198,7 @@ entity
 	"origin" "-576 0 48"
 	"spawnflags" "1"
 	"StartDisabled" "1"
-	"targetname" "avanti_flag1_trigger"
+	"targetname" "ad_flag_1_trigger"
 	"wait" "1"
 	connections
 	{
@@ -10332,6 +10328,62 @@ entity
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "10164"
+	"classname" "prop_static"
+	"angles" "0 180 0"
+	"disableselfshadowing" "0"
+	"disableshadows" "1"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "0"
+	"ignorenormals" "0"
+	"lightmapresolutionx" "32"
+	"lightmapresolutiony" "32"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/props_gameplay/sign_gameplay01.mdl"
+	"skin" "5"
+	"solid" "6"
+	"origin" "1504 0 144"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[-7768 14000]"
+	}
+}
+entity
+{
+	"id" "10168"
+	"classname" "prop_static"
+	"angles" "0 0 0"
+	"disableselfshadowing" "0"
+	"disableshadows" "1"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "0"
+	"ignorenormals" "0"
+	"lightmapresolutionx" "32"
+	"lightmapresolutiony" "32"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/props_gameplay/sign_gameplay01.mdl"
+	"skin" "4"
+	"solid" "6"
+	"origin" "-864 0 144"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[-7768 14000]"
 	}
 }
 cameras

@@ -1,0 +1,275 @@
+versioninfo
+{
+	"editorversion" "400"
+	"editorbuild" "8869"
+	"mapversion" "6"
+	"formatversion" "100"
+	"prefab" "0"
+}
+visgroups
+{
+}
+viewsettings
+{
+	"bSnapToGrid" "1"
+	"bShowGrid" "1"
+	"bShowLogicalGrid" "0"
+	"nGridSpacing" "8"
+}
+palette_plus
+{
+	"color0" "255 255 255"
+	"color1" "255 255 255"
+	"color2" "255 255 255"
+	"color3" "255 255 255"
+	"color4" "255 255 255"
+	"color5" "255 255 255"
+	"color6" "255 255 255"
+	"color7" "255 255 255"
+	"color8" "255 255 255"
+	"color9" "255 255 255"
+	"color10" "255 255 255"
+	"color11" "255 255 255"
+	"color12" "255 255 255"
+	"color13" "255 255 255"
+	"color14" "255 255 255"
+	"color15" "255 255 255"
+}
+colorcorrection_plus
+{
+	"name0" ""
+	"weight0" "1"
+	"name1" ""
+	"weight1" "1"
+	"name2" ""
+	"weight2" "1"
+	"name3" ""
+	"weight3" "1"
+}
+light_plus
+{
+	"samples_sun" "6"
+	"samples_ambient" "40"
+	"samples_vis" "256"
+	"texlight" ""
+	"incremental_delay" "0"
+	"bake_dist" "1024"
+	"radius_scale" "1"
+	"brightness_scale" "1"
+	"ao_scale" "0"
+	"bounced" "1"
+	"incremental" "1"
+	"supersample" "0"
+	"bleed_hack" "1"
+	"soften_cosine" "0"
+	"debug" "0"
+	"cubemap" "1"
+}
+postprocess_plus
+{
+	"enable" "1"
+	"copied_from_controller" "1"
+	"bloom_scale" "1"
+	"bloom_exponent" "2.5"
+	"bloom_saturation" "1"
+	"auto_exposure_min" "0.5"
+	"auto_exposure_max" "2"
+	"tonemap_percent_target" "60"
+	"tonemap_percent_bright_pixels" "2"
+	"tonemap_min_avg_luminance" "3"
+	"tonemap_rate" "1"
+	"vignette_enable" "0"
+	"vignette_start" "1"
+	"vignette_end" "2"
+	"vignette_blur" "0"
+}
+bgimages_plus
+{
+}
+world
+{
+	"id" "1"
+	"mapversion" "6"
+	"classname" "worldspawn"
+	"detailmaterial" "detail/detailsprites_2fort"
+	"detailvbsp" "detail_2fort.vbsp"
+	"maxpropscreenwidth" "-1"
+	"skyname" "sky_tf2_04"
+}
+entity
+{
+	"id" "12"
+	"classname" "func_regenerate"
+	"associatedmodel" "prop_resupply_1"
+	"TeamNum" "0"
+	solid
+	{
+		"id" "13"
+		side
+		{
+			"id" "18"
+			"plane" "(56 88 104.163) (56 -8 104.163) (-56 -8 104.163)"
+			vertices_plus
+			{
+				"v" "56 88 104.163"
+				"v" "56 -8 104.163"
+				"v" "-56 -8 104.163"
+				"v" "-56 88 104.163"
+			}
+			"material" "TOOLS/TOOLSTRIGGER"
+			"uaxis" "[1 0 0 8.85028] 1"
+			"vaxis" "[0 -1 0 24] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "17"
+			"plane" "(56 -8 -7.83669) (56 88 -7.83669) (-56 88 -7.83669)"
+			vertices_plus
+			{
+				"v" "56 -8 -7.83669"
+				"v" "56 88 -7.83669"
+				"v" "-56 88 -7.83669"
+				"v" "-56 -8 -7.83669"
+			}
+			"material" "TOOLS/TOOLSTRIGGER"
+			"uaxis" "[-1 0 0 -8.85028] 1"
+			"vaxis" "[0 -1 0 24] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "16"
+			"plane" "(56 88 -7.8362) (56 -8 -7.8362) (56 -8 104.164)"
+			vertices_plus
+			{
+				"v" "56 88 -7.8362"
+				"v" "56 -8 -7.8362"
+				"v" "56 -8 104.164"
+				"v" "56 88 104.164"
+			}
+			"material" "TOOLS/TOOLSTRIGGER"
+			"uaxis" "[0 1 0 -24] 1"
+			"vaxis" "[0 0 -1 -23.8367] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "15"
+			"plane" "(-56 -8 -7.8362) (-56 88 -7.8362) (-56 88 104.164)"
+			vertices_plus
+			{
+				"v" "-56 -8 -7.8362"
+				"v" "-56 88 -7.8362"
+				"v" "-56 88 104.164"
+				"v" "-56 -8 104.164"
+			}
+			"material" "TOOLS/TOOLSTRIGGER"
+			"uaxis" "[0 -1 0 24] 1"
+			"vaxis" "[0 0 -1 -23.8367] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "14"
+			"plane" "(56 -8 -7.8362) (-56 -8 -7.8362) (-56 -8 104.164)"
+			vertices_plus
+			{
+				"v" "56 -8 -7.8362"
+				"v" "-56 -8 -7.8362"
+				"v" "-56 -8 104.164"
+				"v" "56 -8 104.164"
+			}
+			"material" "TOOLS/TOOLSTRIGGER"
+			"uaxis" "[1 0 0 8.85028] 1"
+			"vaxis" "[0 0 -1 -23.8367] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "13"
+			"plane" "(-56 88 -7.8362) (56 88 -7.8362) (56 88 104.164)"
+			vertices_plus
+			{
+				"v" "-56 88 -7.8362"
+				"v" "56 88 -7.8362"
+				"v" "56 88 104.164"
+				"v" "-56 88 104.164"
+			}
+			"material" "TOOLS/TOOLSTRIGGER"
+			"uaxis" "[-1 0 0 -8.85028] 1"
+			"vaxis" "[0 0 -1 -23.8367] 1"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		editor
+		{
+			"color" "220 30 220"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[9000 -14268]"
+	}
+}
+entity
+{
+	"id" "14"
+	"classname" "prop_dynamic"
+	"angles" "0 90 0"
+	"disableshadows" "0"
+	"ExplodeDamage" "0"
+	"ExplodeRadius" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"MaxAnimTime" "10"
+	"maxdxlevel" "0"
+	"MinAnimTime" "5"
+	"mindxlevel" "0"
+	"model" "models/props_gameplay/resupply_locker.mdl"
+	"modelscale" "1.0"
+	"PerformanceMode" "0"
+	"pressuredelay" "0"
+	"RandomAnimation" "0"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"SetBodyGroup" "0"
+	"skin" "0"
+	"solid" "6"
+	"spawnflags" "0"
+	"StartDisabled" "0"
+	"targetname" "prop_resupply_1"
+	"origin" "-0.849976 9 -7.83568"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[9000 -13768]"
+	}
+}
+cameras
+{
+	"activecamera" "-1"
+}
+cordons
+{
+	"active" "0"
+}

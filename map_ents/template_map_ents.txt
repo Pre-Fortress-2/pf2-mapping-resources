@@ -1,0 +1,34 @@
+// replace template with your map name in the file name! example: ctf_2fort_map_ents.txt
+map_ents
+{
+	// Acceptable entities
+	// item_armor
+	// item_grenadepack
+	// prop_dynamic
+	// item_healthkit_full
+	// item_healthkit_small
+	// item_healthkit_medium
+	// item_ammopack_full
+	// item_ammopack_small
+	// item_ammopack_medium
+	
+	// Pack this file in the map bsp or put it in the same place as the map!
+	
+	
+	mapname // replace mapname with your map name!
+	{
+		// Normal entity that's not prop_dynamic.
+		"item_armor"
+		{
+			"origin"	"-668 -2600 -190"
+			"angles"	"0 90 0"
+		}
+		"prop_dynamic"
+		{
+			"model"		"models/error.mdl" // Model file path.
+			"origin"	"0 0 0"	// Coordinates.
+			"angles"	"0 0 0" // Angles (Where the model is looking)
+			"solid"		"1"		// 1 for vphysics, 2 for bbox collisions.
+		}
+	}
+}

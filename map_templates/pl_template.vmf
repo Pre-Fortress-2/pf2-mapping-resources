@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8869"
-	"mapversion" "182"
+	"mapversion" "189"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -89,7 +89,7 @@ bgimages_plus
 world
 {
 	"id" "1"
-	"mapversion" "182"
+	"mapversion" "189"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -7128,7 +7128,7 @@ entity
 	"mindxlevel" "0"
 	"model" "models/props_gameplay/door_slide_large_door.mdl"
 	"modelscale" "1.0"
-	"parentname" "door_red_small_3b"
+	"parentname" "spawn_door_red_1"
 	"PerformanceMode" "0"
 	"pressuredelay" "0"
 	"RandomAnimation" "0"
@@ -7189,8 +7189,8 @@ entity
 	"wait" "0"
 	connections
 	{
-		"OnStartTouch" "door_red_small_3b,Open,,0,-1"
-		"OnEndTouchAll" "door_red_small_3b,Close,,0,-1"
+		"OnStartTouch" "spawn_door_red_1,Open,,0,-1"
+		"OnEndTouchAll" "spawn_door_red_1,Close,,0,-1"
 	}
 	solid
 	{
@@ -7656,7 +7656,7 @@ entity
 	"rendermode" "0"
 	"spawnflags" "32"
 	"speed" "900"
-	"targetname" "door_red_small_3b"
+	"targetname" "spawn_door_red_1"
 	"unlocked_sentence" "0"
 	"wait" "4"
 	solid
@@ -8079,7 +8079,7 @@ entity
 	"mindxlevel" "0"
 	"model" "models/props_gameplay/door_slide_large_door.mdl"
 	"modelscale" "1.0"
-	"parentname" "door_blue_small_3b"
+	"parentname" "spawn_door_blue_1"
 	"PerformanceMode" "0"
 	"pressuredelay" "0"
 	"RandomAnimation" "0"
@@ -8140,8 +8140,8 @@ entity
 	"wait" "0"
 	connections
 	{
-		"OnStartTouch" "door_blue_small_3b,Open,,0,-1"
-		"OnEndTouchAll" "door_blue_small_3b,Close,,0,-1"
+		"OnStartTouch" "spawn_door_blue_1,Open,,0,-1"
+		"OnEndTouchAll" "spawn_door_blue_1,Close,,0,-1"
 	}
 	solid
 	{
@@ -8420,7 +8420,7 @@ entity
 	"rendermode" "0"
 	"spawnflags" "32"
 	"speed" "900"
-	"targetname" "door_blue_small_3b"
+	"targetname" "spawn_door_blue_1"
 	"unlocked_sentence" "0"
 	"wait" "4"
 	solid
@@ -9264,7 +9264,7 @@ entity
 	"StartSound" "Cart.RollStart"
 	"startspeed" "90"
 	"StopSound" "Cart.RollStop"
-	"target" "minecart_path_1"
+	"target" "minecart_path_0_1"
 	"targetname" "minecart_tracktrain"
 	"velocitytype" "1"
 	"volume" "10"
@@ -9827,14 +9827,14 @@ entity
 	"radius" "0"
 	"spawnflags" "0"
 	"speed" "0"
-	"target" "minecart_path_2"
-	"targetname" "minecart_path_1"
+	"target" "minecart_path_1_2"
+	"targetname" "minecart_path_1_1"
 	connections
 	{
 		"OnPass" "minecart_spark_left,StopSpark,,0,-1"
 		"OnPass" "minecart_spark_right,StopSpark,,0,-1"
 	}
-	"origin" "-384 0 56"
+	"origin" "-320 0 56"
 	editor
 	{
 		"color" "255 192 0"
@@ -9852,8 +9852,8 @@ entity
 	"radius" "0"
 	"spawnflags" "0"
 	"speed" "0"
-	"target" "minecart_path_8"
-	"targetname" "minecart_path_7"
+	"target" "minecart_path_2_2"
+	"targetname" "minecart_path_2_1"
 	"origin" "84 0 56"
 	editor
 	{
@@ -9872,8 +9872,8 @@ entity
 	"radius" "0"
 	"spawnflags" "0"
 	"speed" "0"
-	"target" "minecart_path_7"
-	"targetname" "minecart_path_6"
+	"target" "minecart_path_1_7"
+	"targetname" "minecart_path_1_6"
 	"origin" "-88 0 56"
 	editor
 	{
@@ -9892,8 +9892,8 @@ entity
 	"radius" "0"
 	"spawnflags" "0"
 	"speed" "0"
-	"target" "minecart_path_6"
-	"targetname" "minecart_path_5"
+	"target" "minecart_path_1_6"
+	"targetname" "minecart_path_1_5"
 	"origin" "-114 0 62"
 	editor
 	{
@@ -9915,20 +9915,7 @@ entity
 		"OnTrigger" "game_timer,AddTeamTime,3 240,0,-1"
 		"OnTrigger" "cap_sound,PlaySound,,0,-1"
 		"OnTrigger" "cap_1_platform_model,Skin,1,0,-1"
-		"OnTrigger" "cap1_gate_2_door,Open,,0,-1"
-		"OnTrigger" "cap1_gate_1_door,Open,,0,-1"
-		"OnTrigger" "minecart_path_32,DisablePath,,0,-1"
-		"OnTrigger" "cap1_sign1_door,Open,,0,-1"
-		"OnTrigger" "cap1_gate_3_door,Open,,0,-1"
-		"OnTrigger" "cap1_gate_4_door,Open,,0,-1"
-		"OnTrigger" "cap1_gate_6_door,Open,,0,-1"
-		"OnTrigger" "cap1_gate_5_door,Open,,0,-1"
-		"OnTrigger" "cap1_gate_8_door,Open,,0,-1"
-		"OnTrigger" "cap1_gate_7_door,Open,,0,-1"
-		"OnTrigger" "cap1_gate_9_door,Open,,0,-1"
-		"OnTrigger" "cap1_gate_10_door,Open,,0,-1"
-		"OnTrigger" "cap1_gate_11_door,Open,,0,-1"
-		"OnTrigger" "cap1_gate_12_door,Open,,0,-1"
+		"OnTrigger" "minecart_path_1_3,DisablePath,,0,-1"
 		"OnTrigger" "cap_area,CaptureCurrentCP,,0,-1"
 	}
 	"origin" "-172 0.0389404 80.0788"
@@ -9949,8 +9936,8 @@ entity
 	"radius" "0"
 	"spawnflags" "0"
 	"speed" "0"
-	"target" "minecart_path_5"
-	"targetname" "minecart_path_4"
+	"target" "minecart_path_1_5"
+	"targetname" "minecart_path_1_4"
 	connections
 	{
 		"OnPass" "cap_1_relay,Trigger,,0,1"
@@ -9976,8 +9963,8 @@ entity
 	"radius" "0"
 	"spawnflags" "0"
 	"speed" "0"
-	"target" "minecart_path_3"
-	"targetname" "minecart_path_2"
+	"target" "minecart_path_1_3"
+	"targetname" "minecart_path_1_2"
 	"origin" "-256 0 56"
 	editor
 	{
@@ -9996,8 +9983,8 @@ entity
 	"radius" "0"
 	"spawnflags" "0"
 	"speed" "0"
-	"target" "minecart_path_4"
-	"targetname" "minecart_path_3"
+	"target" "minecart_path_1_4"
+	"targetname" "minecart_path_1_3"
 	"origin" "-228 0 62"
 	editor
 	{
@@ -10092,8 +10079,8 @@ entity
 	"radius" "0"
 	"spawnflags" "0"
 	"speed" "0"
-	"target" "minecart_path_9"
-	"targetname" "minecart_path_8"
+	"target" "minecart_path_2_3"
+	"targetname" "minecart_path_2_2"
 	"origin" "112 0.0389252 62"
 	editor
 	{
@@ -10112,8 +10099,8 @@ entity
 	"radius" "0"
 	"spawnflags" "0"
 	"speed" "0"
-	"target" "minecart_path_10"
-	"targetname" "minecart_path_9"
+	"target" "minecart_path_2_4"
+	"targetname" "minecart_path_2_3"
 	connections
 	{
 		"OnPass" "minecart_spark_right,StopSpark,,0,-1"
@@ -10143,7 +10130,7 @@ entity
 		"OnTrigger" "cap_sound,PlaySound,,0,-1"
 		"OnTrigger" "cap_area,CaptureCurrentCP,,0,-1"
 		"OnTrigger" "cap2_platform_model,Skin,1,0,-1"
-		"OnTrigger" "minecart_path_8,DisablePath,,0,-1"
+		"OnTrigger" "minecart_path_2_2,DisablePath,,0,-1"
 	}
 	"origin" "168 0 80.0788"
 	editor
@@ -10241,8 +10228,8 @@ entity
 	"radius" "0"
 	"spawnflags" "0"
 	"speed" "0"
-	"target" "minecart_path_11"
-	"targetname" "minecart_path_10"
+	"target" "minecart_path_2_5"
+	"targetname" "minecart_path_2_4"
 	"origin" "224 0 62"
 	editor
 	{
@@ -10261,8 +10248,8 @@ entity
 	"radius" "0"
 	"spawnflags" "0"
 	"speed" "0"
-	"target" "minecart_path_12"
-	"targetname" "minecart_path_11"
+	"target" "minecart_path_2_6"
+	"targetname" "minecart_path_2_5"
 	"origin" "252 0 56"
 	editor
 	{
@@ -10478,7 +10465,7 @@ entity
 		"OnTrigger" "cap_sound,PlaySound,,0,-1"
 		"OnTrigger" "cap_b_2_platform_model,Skin,1,0,-1"
 		"OnTrigger" "cap_area,CaptureCurrentCP,,0,-1"
-		"OnTrigger" "minecart_path_13,DisablePath,,0,-1"
+		"OnTrigger" "minecart_path_3_2,DisablePath,,0,-1"
 	}
 	"origin" "536 -1.04382 91.665"
 	editor
@@ -10498,7 +10485,7 @@ entity
 	"point_dom_scale" "1"
 	"point_group" "0"
 	"point_index" "3"
-	"point_printname" "#Goldrush_cap_3_B"
+	"point_printname" "#Badwater_cap_3"
 	"point_warn_on_cap" "2"
 	"point_warn_sound" "ControlPoint.CaptureWarn"
 	"random_owner_on_restart" "0"
@@ -10670,7 +10657,6 @@ entity
 	"ExplodeRadius" "0"
 	"fademindist" "-1"
 	"fadescale" "1"
-	"lightingorigin" "cap_b_2_platform_model_lighting"
 	"MaxAnimTime" "10"
 	"MinAnimTime" "5"
 	"model" "models/props_trainyard/track_midcap.mdl"
@@ -10706,8 +10692,8 @@ entity
 	"radius" "0"
 	"spawnflags" "0"
 	"speed" "0"
-	"target" "minecart_path_13"
-	"targetname" "minecart_path_12"
+	"target" "minecart_path_3_2"
+	"targetname" "minecart_path_3_1"
 	"origin" "452 0 56"
 	editor
 	{
@@ -10726,8 +10712,8 @@ entity
 	"radius" "0"
 	"spawnflags" "0"
 	"speed" "0"
-	"target" "minecart_path_14"
-	"targetname" "minecart_path_13"
+	"target" "minecart_path_3_3"
+	"targetname" "minecart_path_3_2"
 	"origin" "480 0 62"
 	editor
 	{
@@ -10746,8 +10732,8 @@ entity
 	"radius" "0"
 	"spawnflags" "0"
 	"speed" "0"
-	"target" "minecart_path_15"
-	"targetname" "minecart_path_14"
+	"target" "minecart_path_3_4"
+	"targetname" "minecart_path_3_3"
 	connections
 	{
 		"OnPass" "cap_c_midpoint2_relay,Trigger,,0,1"
@@ -10773,8 +10759,8 @@ entity
 	"radius" "0"
 	"spawnflags" "0"
 	"speed" "0"
-	"target" "minecart_path_16"
-	"targetname" "minecart_path_15"
+	"target" "minecart_path_3_5"
+	"targetname" "minecart_path_3_4"
 	"origin" "592 0 62"
 	editor
 	{
@@ -10793,8 +10779,8 @@ entity
 	"radius" "0"
 	"spawnflags" "0"
 	"speed" "0"
-	"target" "minecart_path_17"
-	"targetname" "minecart_path_16"
+	"target" "minecart_path_3_6"
+	"targetname" "minecart_path_3_5"
 	"origin" "620 0 56"
 	editor
 	{
@@ -11116,8 +11102,8 @@ entity
 	"radius" "0"
 	"spawnflags" "0"
 	"speed" "0"
-	"target" "minecart_path_18"
-	"targetname" "minecart_path_17"
+	"target" "minecart_path_4_2"
+	"targetname" "minecart_path_4_1"
 	connections
 	{
 		"OnPass" "minecart_constraint,Break,,0.2,-1"
@@ -11147,7 +11133,7 @@ entity
 	"radius" "0"
 	"spawnflags" "0"
 	"speed" "0"
-	"targetname" "minecart_path_18"
+	"targetname" "minecart_path_4_2"
 	"origin" "842 -2.86102e-06 52"
 	editor
 	{
@@ -11166,7 +11152,7 @@ entity
 	"point_dom_scale" "1"
 	"point_group" "0"
 	"point_index" "4"
-	"point_printname" "#Goldrush_cap_3_C"
+	"point_printname" "#Badwater_cap_4"
 	"point_warn_on_cap" "2"
 	"point_warn_sound" "ControlPoint.CaptureWarn"
 	"random_owner_on_restart" "0"
@@ -11202,23 +11188,13 @@ entity
 	"targetname" "end_pit_destroy_relay"
 	connections
 	{
-		"OnTrigger" "end_pit_destroy_props_animate,SetAnimation,boom,0,-1"
-		"OnTrigger" "end_pit_destroy_props_animate,Enable,,0,-1"
-		"OnTrigger" "end_pit_destroy_props_kill,Kill,,0,-1"
 		"OnTrigger" "stage3_capture_wav,PlaySound,,0,-1"
 		"OnTrigger" "stage3_capture_shake,StartShake,,0,-1"
-		"OnTrigger" "end_pit_destroy_brushes,Kill,,0,-1"
-		"OnTrigger" "Cap_C_pitdoors,Kill,,0,-1"
 		"OnTrigger" "end_pit_destroy_killtrigger,Enable,,0,-1"
 		"OnTrigger" "end_pit_destroy_killtrigger,Disable,,0.5,-1"
-		"OnTrigger" "end_pit_destroy_props_static,Enable,,0.5,-1"
 		"OnTrigger" "minecart_physprop,Kill,,0,-1"
-		"OnTrigger" "end_pit_destroy_props_animate2,Enable,,0.2,-1"
-		"OnTrigger" "end_pit_destroy_props_animate2,SetAnimation,boom,0.2,-1"
-		"OnTrigger" "end_pit_destroy_props_static2,Enable,,0,-1"
-		"OnTrigger" "end_pit_destroy_props_static2,EnableCollision,,0,-1"
 		"OnTrigger" "end_pit_destroy_particle,Start,,0,-1"
-		"OnTrigger" "gamerules,SetRequiredObserverTarget,,2,-1"
+		"OnTrigger" "tf_gamerules,SetRequiredObserverTarget,,2,-1"
 	}
 	"origin" "760 -120 8"
 	editor
@@ -11429,150 +11405,156 @@ entity
 		"logicalpos" "[0 0]"
 	}
 }
-entity
+hidden
 {
-	"id" "11700"
-	"classname" "trigger_multiple"
-	"origin" "1848 120 12.59"
-	"spawnflags" "1"
-	"StartDisabled" "1"
-	"targetname" "end_pit_destroy_killtrigger"
-	"wait" "1"
-	connections
+	entity
 	{
-		"OnStartTouch" "!activator,SetHealth,,0,-1"
-	}
-	solid
-	{
-		"id" "11703"
-		side
+		"id" "11700"
+		"classname" "trigger_multiple"
+		"origin" "1848 120 12.59"
+		"spawnflags" "1"
+		"StartDisabled" "1"
+		"targetname" "end_pit_destroy_killtrigger"
+		"wait" "1"
+		connections
 		{
-			"id" "1520"
-			"plane" "(1120 240 448) (1120 -240 448) (672 -240 448)"
-			vertices_plus
-			{
-				"v" "1120 240 448"
-				"v" "1120 -240 448"
-				"v" "672 -240 448"
-				"v" "672 240 448"
-			}
-			"material" "TOOLS/TOOLSTRIGGER"
-			"uaxis" "[-1 0 0 59] 1"
-			"vaxis" "[0 1 0 21] 1"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
+			"OnStartTouch" "!activator,SetHealth,,0,-1"
 		}
-		side
+		hidden
 		{
-			"id" "1519"
-			"plane" "(672 -240 -256) (1120 -240 -256) (1120 240 -256)"
-			vertices_plus
+			solid
 			{
-				"v" "672 -240 -256"
-				"v" "1120 -240 -256"
-				"v" "1120 240 -256"
-				"v" "672 240 -256"
+				"id" "11703"
+				side
+				{
+					"id" "1520"
+					"plane" "(1120 240 448) (1120 -240 448) (672 -240 448)"
+					vertices_plus
+					{
+						"v" "1120 240 448"
+						"v" "1120 -240 448"
+						"v" "672 -240 448"
+						"v" "672 240 448"
+					}
+					"material" "TOOLS/TOOLSTRIGGER"
+					"uaxis" "[-1 0 0 59] 1"
+					"vaxis" "[0 1 0 21] 1"
+					"rotation" "0"
+					"lightmapscale" "16"
+					"smoothing_groups" "0"
+				}
+				side
+				{
+					"id" "1519"
+					"plane" "(672 -240 -256) (1120 -240 -256) (1120 240 -256)"
+					vertices_plus
+					{
+						"v" "672 -240 -256"
+						"v" "1120 -240 -256"
+						"v" "1120 240 -256"
+						"v" "672 240 -256"
+					}
+					"material" "TOOLS/TOOLSTRIGGER"
+					"uaxis" "[-1 0 0 59] 1"
+					"vaxis" "[0 1 0 21] 1"
+					"rotation" "0"
+					"lightmapscale" "16"
+					"smoothing_groups" "0"
+				}
+				side
+				{
+					"id" "1518"
+					"plane" "(1120 -240 -256) (672 -240 -256) (672 -240 448)"
+					vertices_plus
+					{
+						"v" "1120 -240 -256"
+						"v" "672 -240 -256"
+						"v" "672 -240 448"
+						"v" "1120 -240 448"
+					}
+					"material" "TOOLS/TOOLSTRIGGER"
+					"uaxis" "[-1 0 0 0] 0.25"
+					"vaxis" "[0 0 -1 0] 0.25"
+					"rotation" "0"
+					"lightmapscale" "16"
+					"smoothing_groups" "0"
+				}
+				side
+				{
+					"id" "1517"
+					"plane" "(1120 240 -256) (1120 -240 -256) (1120 -240 448)"
+					vertices_plus
+					{
+						"v" "1120 240 -256"
+						"v" "1120 -240 -256"
+						"v" "1120 -240 448"
+						"v" "1120 240 448"
+					}
+					"material" "TOOLS/TOOLSTRIGGER"
+					"uaxis" "[0 -1 0 -0] 0.25"
+					"vaxis" "[0 0 -1 0] 0.25"
+					"rotation" "0"
+					"lightmapscale" "16"
+					"smoothing_groups" "0"
+				}
+				side
+				{
+					"id" "1516"
+					"plane" "(672 -240 -256) (672 240 -256) (672 240 448)"
+					vertices_plus
+					{
+						"v" "672 -240 -256"
+						"v" "672 240 -256"
+						"v" "672 240 448"
+						"v" "672 -240 448"
+					}
+					"material" "TOOLS/TOOLSTRIGGER"
+					"uaxis" "[0 -1 0 -0] 0.25"
+					"vaxis" "[0 0 -1 0] 0.25"
+					"rotation" "0"
+					"lightmapscale" "16"
+					"smoothing_groups" "0"
+				}
+				side
+				{
+					"id" "1515"
+					"plane" "(672 240 -256) (1120 240 -256) (1120 240 448)"
+					vertices_plus
+					{
+						"v" "672 240 -256"
+						"v" "1120 240 -256"
+						"v" "1120 240 448"
+						"v" "672 240 448"
+					}
+					"material" "TOOLS/TOOLSTRIGGER"
+					"uaxis" "[-1 0 0 0] 0.25"
+					"vaxis" "[0 0 -1 0] 0.25"
+					"rotation" "0"
+					"lightmapscale" "16"
+					"smoothing_groups" "0"
+				}
+				editor
+				{
+					"color" "220 30 220"
+					"visgroupshown" "1"
+					"visgroupautoshown" "1"
+				}
 			}
-			"material" "TOOLS/TOOLSTRIGGER"
-			"uaxis" "[-1 0 0 59] 1"
-			"vaxis" "[0 1 0 21] 1"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "1518"
-			"plane" "(1120 -240 -256) (672 -240 -256) (672 -240 448)"
-			vertices_plus
-			{
-				"v" "1120 -240 -256"
-				"v" "672 -240 -256"
-				"v" "672 -240 448"
-				"v" "1120 -240 448"
-			}
-			"material" "TOOLS/TOOLSTRIGGER"
-			"uaxis" "[-1 0 0 0] 0.25"
-			"vaxis" "[0 0 -1 0] 0.25"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "1517"
-			"plane" "(1120 240 -256) (1120 -240 -256) (1120 -240 448)"
-			vertices_plus
-			{
-				"v" "1120 240 -256"
-				"v" "1120 -240 -256"
-				"v" "1120 -240 448"
-				"v" "1120 240 448"
-			}
-			"material" "TOOLS/TOOLSTRIGGER"
-			"uaxis" "[0 -1 0 -0] 0.25"
-			"vaxis" "[0 0 -1 0] 0.25"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "1516"
-			"plane" "(672 -240 -256) (672 240 -256) (672 240 448)"
-			vertices_plus
-			{
-				"v" "672 -240 -256"
-				"v" "672 240 -256"
-				"v" "672 240 448"
-				"v" "672 -240 448"
-			}
-			"material" "TOOLS/TOOLSTRIGGER"
-			"uaxis" "[0 -1 0 -0] 0.25"
-			"vaxis" "[0 0 -1 0] 0.25"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "1515"
-			"plane" "(672 240 -256) (1120 240 -256) (1120 240 448)"
-			vertices_plus
-			{
-				"v" "672 240 -256"
-				"v" "1120 240 -256"
-				"v" "1120 240 448"
-				"v" "672 240 448"
-			}
-			"material" "TOOLS/TOOLSTRIGGER"
-			"uaxis" "[-1 0 0 0] 0.25"
-			"vaxis" "[0 0 -1 0] 0.25"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
 		}
 		editor
 		{
 			"color" "220 30 220"
 			"visgroupshown" "1"
 			"visgroupautoshown" "1"
+			"logicalpos" "[0 500]"
 		}
-	}
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 500]"
 	}
 }
 entity
 {
 	"id" "12029"
 	"classname" "team_train_watcher"
-	"goal_node" "minecart_path_18"
+	"goal_node" "minecart_path_4_2"
 	"hud_min_speed_level_1" "1"
 	"hud_min_speed_level_2" "60"
 	"hud_min_speed_level_3" "80"
@@ -11580,12 +11562,12 @@ entity
 	"linked_cp_2" "cap_2"
 	"linked_cp_3" "cap_3"
 	"linked_cp_4" "cap_4"
-	"linked_pathtrack_1" "minecart_path_4"
-	"linked_pathtrack_2" "minecart_path_9"
-	"linked_pathtrack_3" "minecart_path_14"
-	"linked_pathtrack_4" "minecart_path_18"
+	"linked_pathtrack_1" "minecart_path_1_4"
+	"linked_pathtrack_2" "minecart_path_2_3"
+	"linked_pathtrack_3" "minecart_path_3_3"
+	"linked_pathtrack_4" "minecart_path_4_2"
 	"speed_forward_modifier" "1"
-	"start_node" "minecart_path_1"
+	"start_node" "minecart_path_0_1"
 	"targetname" "watcher"
 	"train" "minecart_tracktrain"
 	"train_can_recede" "1"
@@ -11604,6 +11586,147 @@ entity
 		"logicalpos" "[3000 -6768]"
 	}
 }
+entity
+{
+	"id" "12438"
+	"classname" "path_track"
+	"angles" "0 0 0"
+	"orientationtype" "1"
+	"radius" "0"
+	"spawnflags" "0"
+	"speed" "0"
+	"target" "minecart_path_1_1"
+	"targetname" "minecart_path_0_1"
+	connections
+	{
+		"OnPass" "minecart_spark_left,StopSpark,,0,-1"
+		"OnPass" "minecart_spark_right,StopSpark,,0,-1"
+	}
+	"origin" "-384 0 56"
+	editor
+	{
+		"color" "255 192 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[3500 -768]"
+	}
+}
+entity
+{
+	"id" "12447"
+	"classname" "path_track"
+	"angles" "0 0 0"
+	"orientationtype" "1"
+	"radius" "0"
+	"spawnflags" "0"
+	"speed" "0"
+	"target" "minecart_path_2_1"
+	"targetname" "minecart_path_1_7"
+	"origin" "0 0 56"
+	editor
+	{
+		"color" "255 192 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[3500 8000]"
+	}
+}
+entity
+{
+	"id" "12455"
+	"classname" "path_track"
+	"angles" "0 0 0"
+	"orientationtype" "1"
+	"radius" "0"
+	"spawnflags" "0"
+	"speed" "0"
+	"target" "minecart_path_3_1"
+	"targetname" "minecart_path_2_6"
+	"origin" "352 0 56"
+	editor
+	{
+		"color" "255 192 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[3500 9500]"
+	}
+}
+entity
+{
+	"id" "12458"
+	"classname" "path_track"
+	"angles" "0 0 0"
+	"orientationtype" "1"
+	"radius" "0"
+	"spawnflags" "0"
+	"speed" "0"
+	"target" "minecart_path_4_1"
+	"targetname" "minecart_path_3_6"
+	"origin" "696 0 56"
+	editor
+	{
+		"color" "255 192 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[3500 9500]"
+	}
+}
+entity
+{
+	"id" "12793"
+	"classname" "prop_static"
+	"angles" "0 180 0"
+	"disableselfshadowing" "0"
+	"disableshadows" "1"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "0"
+	"ignorenormals" "0"
+	"lightmapresolutionx" "32"
+	"lightmapresolutiony" "32"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/props_gameplay/sign_gameplay01.mdl"
+	"skin" "5"
+	"solid" "0"
+	"origin" "1504 0 144"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[-7768 14000]"
+	}
+}
+entity
+{
+	"id" "12797"
+	"classname" "prop_static"
+	"angles" "0 0 0"
+	"disableselfshadowing" "0"
+	"disableshadows" "1"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "0"
+	"ignorenormals" "0"
+	"lightmapresolutionx" "32"
+	"lightmapresolutiony" "32"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/props_gameplay/sign_gameplay01.mdl"
+	"skin" "4"
+	"solid" "0"
+	"origin" "-864 0 144"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[-7768 14000]"
+	}
+}
 cameras
 {
 	"activecamera" "-1"
@@ -11611,4 +11734,8 @@ cameras
 cordons
 {
 	"active" "0"
+}
+quickhide
+{
+	"count" "3"
 }
