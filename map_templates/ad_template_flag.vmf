@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8869"
-	"mapversion" "160"
+	"mapversion" "161"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -89,7 +89,7 @@ bgimages_plus
 world
 {
 	"id" "1"
-	"mapversion" "160"
+	"mapversion" "161"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -9555,7 +9555,6 @@ entity
 	{
 		"OnCapTeam2" "prop_cap_3,Skin,2,0,-1"
 		"OnCapTeam1" "prop_cap_3,Skin,1,0,-1"
-		"OnEndCap" "end_of_game,RoundWin,,0,-1"
 		"OnCapTeam2" "ad_flag_2,Disable,,0,-1"
 		"OnCapTeam2" "ad_flag_2_trigger,Disable,,0,-1"
 	}
