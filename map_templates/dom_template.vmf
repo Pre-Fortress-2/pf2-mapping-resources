@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8869"
-	"mapversion" "130"
+	"mapversion" "131"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -89,7 +89,7 @@ bgimages_plus
 world
 {
 	"id" "1"
-	"mapversion" "130"
+	"mapversion" "131"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -8108,6 +8108,7 @@ entity
 	"classname" "trigger_capture_area"
 	"area_cap_point" "control_point_1"
 	"area_deteriorate_time" "20"
+	"area_owner_revert_fast" "1"
 	"area_time_to_cap" "4"
 	"StartDisabled" "0"
 	"team_cancap_2" "1"
@@ -8253,6 +8254,7 @@ entity
 	"classname" "trigger_capture_area"
 	"area_cap_point" "control_point_2"
 	"area_deteriorate_time" "20"
+	"area_owner_revert_fast" "1"
 	"area_time_to_cap" "6"
 	"StartDisabled" "0"
 	"team_cancap_2" "1"
@@ -8433,6 +8435,7 @@ entity
 	"classname" "trigger_capture_area"
 	"area_cap_point" "control_point_3"
 	"area_deteriorate_time" "20"
+	"area_owner_revert_fast" "1"
 	"area_time_to_cap" "4"
 	"StartDisabled" "0"
 	"team_cancap_2" "1"
