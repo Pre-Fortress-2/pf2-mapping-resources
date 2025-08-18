@@ -52,6 +52,8 @@ tf_gamerules: An entity that handles games rules such as team roles, respawn tim
 team_control_point: An entity that marks the location of where a capture point should be at and renders the capture point hologram. It needs to be paired with a trigger_capture_area brush entity in order to be captureable. Each point needs to have a unique name and index number.
 In AD, it's important that all team control points are set to be owned by the RED team and each sequential control point should be locked behind the requirement that the previous is owned by BLUE.
 
+In the case of triangle AD, it's important that the final control requires both initial points to be owned by BLUE.
+
 /====================/
 
 trigger_capture_area: A brush entity trigger that determines the capture area of control points. In AD, only BLUE team should be able to capture this point.
