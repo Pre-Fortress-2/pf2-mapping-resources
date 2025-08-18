@@ -6,7 +6,7 @@ This repository is designed to help map creators streamline their setup with rea
 
 ## What's Included
 
-- **Gamemode Templates**
+### Gamemode Templates
 
 	- Arena
 	- Attack/Defense (single stage, flag, multi stage, triangle)
